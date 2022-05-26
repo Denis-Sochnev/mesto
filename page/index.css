@@ -1,0 +1,47 @@
+/* Сторонние стили */
+@import url(../vendor/normalize.css);
+
+/* Подключение шрифтов и тело страницы */
+@import url(../vendor/fonts/Inter/inter.css);
+@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
+
+/* Блок "header" */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+
+/* Блок "profile" */
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__content/profile__content.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile-info/profile-info.css);
+@import url(../blocks/profile-info/__name-block/profile-info__name-block.css);
+@import url(../blocks/profile-info/__name/profile-info__name.css);
+@import url(../blocks/profile-info/__profession/profile-info__profession.css);
+@import url(../blocks/profile-info/__edit-button/profile-info__edit-button.css);
+@import url(../blocks/profile/__add-button/profile__add-button.css);
+
+/* Блок "cards-grid" */
+@import url(../blocks/cards-grid/cards-grid.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__image/card__image.css);
+@import url(../blocks/card/__text/card__text.css);
+@import url(../blocks/card/__name/card__name.css);
+@import url(../blocks/card/__like/card__like.css);
+@import url(../blocks/card/__like/_active/card__like_active.css);
+
+/* Блок "footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+/* Блок "pop-up" */
+@import url(../blocks/pop-up/pop-up.css);
+@import url(../blocks/pop-up/_oppened/pop-up_oppened.css);
+@import url(../blocks/pop-up/__close/pop-up__close.css);
+@import url(../blocks/pop-up/__body/pop-up__body.css);
+@import url(../blocks/pop-up/__content/pop-up__content.css);
+@import url(../blocks/pop-up/__content-name/pop-up__content-name.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__information/form__information.css);
+@import url(../blocks/form/__information/_profession/form__information_profession.css);
+@import url(../blocks/form/__save/form__save.css);

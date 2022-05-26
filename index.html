@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type='text/css' href="./page/index.css">
+
+    <title>Mesto</title>
+</head>
+<body class="root">
+    <div class="page">
+
+        <header class="header">
+            <img class="header__logo" src="./image/Vector.svg" alt="Mesto">
+        </header>
+
+        <section class="profile">
+            <div class="profile__content">
+                <div class="profile__avatar"></div>
+                <div class="profile-info">
+                    <div class="profile-info__name-block">
+                        <h1 class="profile-info__name">Жак-Ив Кусто</h1>
+                        <button class="profile-info__edit-button" type="button" title="Редактировать профиль"></button>
+                    </div>
+                    <p class="profile-info__profession">Исследователь океана</p>
+                </div>
+            </div>
+            <button class="profile__add-button" type="button" title="Добавить"></button>
+        </section>
+
+        <main class="cards-grid">
+
+            <div class="card">
+                <img class="card__image" src="./image/karachaevsk.jpg" alt="Карачаевск">
+                <div class="card__text">
+                    <p class="card__name">Карачаевск</p>
+                    <button class="card__like" type="button" title="Лайк"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./image/elbrys.jpg" alt="Эльбрус">
+                <div class="card__text">
+                    <p class="card__name">Гора Эльбрус</p>
+                    <button class="card__like" type="button" title="Лайк"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./image/dombay.jpg" alt="Домбай">
+                <div class="card__text">
+                    <p class="card__name">Домбай</p>
+                    <button class="card__like" type="button" title="Лайк"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./image/elbrys.jpg" alt="Эльбрус">
+                <div class="card__text">
+                    <p class="card__name">Гора Эльбрус</p>
+                    <button class="card__like" type="button" title="Лайк"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./image/dombay.jpg" alt="Домбай">
+                <div class="card__text">
+                    <p class="card__name">Домбай</p>
+                    <button class="card__like" type="button" title="Лайк"></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__image" src="./image/karachaevsk.jpg" alt="Карачаевск">
+                <div class="card__text">
+                    <p class="card__name">Карачаевск</p>
+                    <button class="card__like" type="button" title="Лайк"></button>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">&copy; 2022. Сочнев Денис</p>
+        </footer>
+
+        <div class="pop-up">
+            <div class="pop-up__body">
+                <div class="pop-up__content">
+                    <p class="pop-up__content-name">Редактировать профиль</p>
+                    <form class="form" action="post" name="form-profile">
+                        <input class="form__information form__information_name" type="text" name="user-name" placeholder="Имя пользователя">
+                        <input class="form__information form__information_profession" type="text" name="user-profession" placeholder="Профессия пользователя">
+                        <button class="form__save" type="submit" title="Сохранить">Сохранить</button>
+                    </form>
+                    <button class="pop-up__close" type="button" title="Закрыть pop-up"></button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="./scripts/index.js"></script>
+
+</body>
+</html>
