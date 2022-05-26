@@ -10,4 +10,4 @@
 
 <h1 align="center">**Ссылка на GitHub Pages**</h1>
   
-https://Denis-Sochnev.github.io/mesto/
+https://denis-sochnev.github.io/mesto/
