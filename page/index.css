@@ -14,11 +14,11 @@
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__content/profile__content.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
-@import url(../blocks/profile-info/profile-info.css);
-@import url(../blocks/profile-info/__name-block/profile-info__name-block.css);
-@import url(../blocks/profile-info/__name/profile-info__name.css);
-@import url(../blocks/profile-info/__profession/profile-info__profession.css);
-@import url(../blocks/profile-info/__edit-button/profile-info__edit-button.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__name-block/profile__name-block.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__profession/profile__profession.css);
+@import url(../blocks/profile/__edit-button/profile__edit-button.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 
 /* Блок "cards-grid" */
@@ -38,10 +38,8 @@
 @import url(../blocks/pop-up/pop-up.css);
 @import url(../blocks/pop-up/_oppened/pop-up_oppened.css);
 @import url(../blocks/pop-up/__close/pop-up__close.css);
-@import url(../blocks/pop-up/__body/pop-up__body.css);
 @import url(../blocks/pop-up/__content/pop-up__content.css);
 @import url(../blocks/pop-up/__content-name/pop-up__content-name.css);
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__information/form__information.css);
-@import url(../blocks/form/__information/_profession/form__information_profession.css);
 @import url(../blocks/form/__save/form__save.css);

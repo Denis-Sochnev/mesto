@@ -6,11 +6,10 @@
     max-width: 880px;
 }
 
-@media screen and (max-width:879px) {
+@media screen and (max-width:898px) {
     .cards-grid  {
         grid-template-columns: repeat(2,282px);
         grid-template-rows: repeat(3,1fr);
-        gap: 17px;
         max-width: 581px;
         margin: 0 auto;
     }
@@ -22,6 +21,5 @@
         grid-template-rows: repeat(6,1fr);
         gap: 20px;
         max-width: 282px;
-        margin: 0 auto;
     }
 }

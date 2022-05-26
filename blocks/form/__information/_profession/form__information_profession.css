@@ -1,9 +1,0 @@
-.form__information_profession {
-    margin-bottom: 48px;
-}
-
-@media screen and (max-width:580px) {
-    .form__information_profession  {
-        margin-bottom: 45px;
-    }
-}

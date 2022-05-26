@@ -15,70 +15,70 @@
             <img class="header__logo" src="./image/Vector.svg" alt="Место">
         </header>
 
-        <section class="profile">
-            <div class="profile__content">
-                <div class="profile__avatar"></div>
-                <div class="profile-info">
-                    <div class="profile-info__name-block">
-                        <h1 class="profile-info__name">Жак-Ив Кусто</h1>
-                        <button class="profile-info__edit-button" type="button" title="Редактировать профиль"></button>
+        <main>
+            <section class="profile">
+                <div class="profile__content">
+                    <img class="profile__avatar" src="./image/avatar.jpg" alt="Фотография">
+                    <div class="profile__info">
+                        <div class="profile__name-block">
+                            <h1 class="profile__name">Жак-Ив Кусто</h1>
+                            <button class="profile__edit-button" type="button" title="Редактировать профиль" aria-label="Редактировать"></button>
+                        </div>
+                        <p class="profile__profession">Исследователь океана</p>
                     </div>
-                    <p class="profile-info__profession">Исследователь океана</p>
                 </div>
-            </div>
-            <button class="profile__add-button" type="button" title="Добавить"></button>
-        </section>
+                <button class="profile__add-button" type="button" title="Добавить" aria-label="Добавить"></button>
+            </section>
 
-        <main class="cards-grid">
-
-            <div class="card">
-                <img class="card__image" src="./image/karachaevsk.jpg" alt="Карачаевск">
-                <div class="card__text">
-                    <p class="card__name">Карачаевск</p>
-                    <button class="card__like" type="button" title="Лайк"></button>
+            <section class="cards-grid">
+                <div class="card">
+                    <img class="card__image" src="./image/karachaevsk.jpg" alt="Карачаевск">
+                    <div class="card__text">
+                        <h2 class="card__name">Карачаевск</h2>
+                        <button class="card__like" type="button" aria-label="Нравится"></button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <img class="card__image" src="./image/elbrys.jpg" alt="Эльбрус">
-                <div class="card__text">
-                    <p class="card__name">Гора Эльбрус</p>
-                    <button class="card__like" type="button" title="Лайк"></button>
-                </div>
-            </div>
+                <article class="card">
+                    <img class="card__image" src="./image/elbrys.jpg" alt="Эльбрус">
+                    <div class="card__text">
+                        <h2 class="card__name">Гора Эльбрус</h2>
+                        <button class="card__like" type="button" aria-label="Нравится"></button>
+                    </div>
+                </article>
 
-            <div class="card">
-                <img class="card__image" src="./image/dombay.jpg" alt="Домбай">
-                <div class="card__text">
-                    <p class="card__name">Домбай</p>
-                    <button class="card__like" type="button" title="Лайк"></button>
-                </div>
-            </div>
+                <article class="card">
+                    <img class="card__image" src="./image/dombay.jpg" alt="Домбай">
+                    <div class="card__text">
+                        <h2 class="card__name">Домбай</h2>
+                        <button class="card__like" type="button" aria-label="Нравится"></button>
+                    </div>
+                </article>
 
-            <div class="card">
-                <img class="card__image" src="./image/elbrys.jpg" alt="Эльбрус">
-                <div class="card__text">
-                    <p class="card__name">Гора Эльбрус</p>
-                    <button class="card__like" type="button" title="Лайк"></button>
-                </div>
-            </div>
+                <article class="card">
+                    <img class="card__image" src="./image/elbrys.jpg" alt="Эльбрус">
+                    <div class="card__text">
+                        <h2 class="card__name">Гора Эльбрус</h2>
+                        <button class="card__like" type="button" aria-label="Нравится"></button>
+                    </div>
+                </article>
 
-            <div class="card">
-                <img class="card__image" src="./image/dombay.jpg" alt="Домбай">
-                <div class="card__text">
-                    <p class="card__name">Домбай</p>
-                    <button class="card__like" type="button" title="Лайк"></button>
-                </div>
-            </div>
+                <article class="card">
+                    <img class="card__image" src="./image/dombay.jpg" alt="Домбай">
+                    <div class="card__text">
+                        <h2 class="card__name">Домбай</h2>
+                        <button class="card__like" type="button" title="Лайк" aria-label="Нравится"></button>
+                    </div>
+                </article>
 
-            <div class="card">
-                <img class="card__image" src="./image/karachaevsk.jpg" alt="Карачаевск">
-                <div class="card__text">
-                    <p class="card__name">Карачаевск</p>
-                    <button class="card__like" type="button" title="Лайк"></button>
-                </div>
-            </div>
-
+                <article class="card">
+                    <img class="card__image" src="./image/karachaevsk.jpg" alt="Карачаевск">
+                    <div class="card__text">
+                        <h2 class="card__name">Карачаевск</h2>
+                        <button class="card__like" type="button" title="Лайк" aria-label="Нравится"></button>
+                    </div>
+                </article>
+            </section>
         </main>
 
         <footer class="footer">
@@ -86,17 +86,14 @@
         </footer>
 
         <div class="pop-up">
-            <div class="pop-up__body">
-                <div class="pop-up__content">
-                    <p class="pop-up__content-name">Редактировать профиль</p>
-                    <form class="form" action="post" name="form-profile">
-                        <input class="form__information form__information_name" type="text" name="user-name" placeholder="Имя пользователя">
-                        <input class="form__information form__information_profession" type="text" name="user-profession" placeholder="Профессия пользователя">
-                        <button class="form__save" type="submit" title="Сохранить">Сохранить</button>
-                    </form>
-                    <button class="pop-up__close" type="button" title="Закрыть pop-up"></button>
-                </div>
-                
+            <div class="pop-up__content">
+                <h3 class="pop-up__content-name">Редактировать профиль</h3>
+                <form class="form" action="post" name="form-profile">
+                    <input class="form__information form__information_name" type="text" name="user-name" placeholder="Имя пользователя">
+                    <input class="form__information form__information_profession" type="text" name="user-profession" placeholder="Профессия пользователя">
+                    <button class="form__save" type="submit" title="Сохранить" aria-label="Сохранить">Сохранить</button>
+                </form>
+                <button class="pop-up__close" type="button" title="Закрыть pop-up" aria-label="Закрыть"></button>
             </div>
         </div>
 

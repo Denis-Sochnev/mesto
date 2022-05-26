@@ -1,6 +1,6 @@
 .form__information {
     border: none;
-    border-bottom: 1px solid #545454;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0;
     padding-bottom: 13px;
     margin-bottom: 30px;
@@ -12,8 +12,18 @@
     box-sizing: border-box;
 }
 
+.form__information:last-of-type {
+    margin-bottom: 48px;
+}
+
 @media screen and (max-width:580px) {
     .form__information  {
         min-width: 238px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .form__information:last-of-type  {
+        margin-bottom: 45px;
     }
 }

@@ -17,6 +17,9 @@
 @media screen and (max-width:580px) {
     .form__save  {
         min-width: 238px;
+        font-size: 14px;
+        line-height: 17px;
+        min-height: 46px;
     }
 }
 
