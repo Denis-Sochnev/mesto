@@ -3,12 +3,12 @@ const popup = document.querySelector('.pop-up');
 const closeButton = document.querySelector('.pop-up__close');
 const profileName = document.querySelector('.profile__name');
 const profileProffesion = document.querySelector('.profile__profession');
-const inputName = document.querySelector('.form__information_name');
-const inputProffesion = document. querySelector('.form__information_profession');
+const inputName = document.querySelector('.form__information_value_name');
+const inputProffesion = document. querySelector('.form__information_value_profession');
 
 let formElement = document.querySelector('.form'); 
-let nameInput = document.querySelector('.form__information_name');
-let jobInput = document.querySelector('.form__information_profession');
+let nameInput = document.querySelector('.form__information_value_name');
+let jobInput = document.querySelector('.form__information_value_profession');
 
 // Функция открытия pop-up 
 function popupOpened() {

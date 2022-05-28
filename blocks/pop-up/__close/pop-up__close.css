@@ -9,7 +9,7 @@
     border: none;
     position: absolute;
     left: 438px;
-    bottom: 352px;
+    bottom: 339px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -20,7 +20,7 @@
         width: 20px;
         height: 20px;
         left: 262px;
-        bottom: 348px;
+        bottom: 338px;
     }
 }
 
