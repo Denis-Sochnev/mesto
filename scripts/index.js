@@ -43,7 +43,7 @@ let jobInput = document.querySelector('.form__information_value_profession');
 const addButton = document.querySelector('.profile__add-button');
 const popupCard = document.querySelector('.pop-up_value_add-card');
 const buttonCreate = document. querySelector('.form__save_value_create');
-const popupCardClose = document. querySelector('.pop-up_close_card');
+const popupCardClose = document. querySelector('.pop-up__close_card');
 
 let formCard = document.querySelector('.form_add_card');
 let inputLabel = document.querySelector('.form__information_value_label');
