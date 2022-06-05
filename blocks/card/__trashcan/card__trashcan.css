@@ -1,0 +1,18 @@
+.card__trashcan {
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    background-image: url(../../../image/trash.svg);
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
+    right: 20px;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.card__trashcan:hover {
+    opacity: 0.6;
+}
