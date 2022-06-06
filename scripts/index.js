@@ -28,9 +28,9 @@ const initialCards = [
 
 // Переменные pop-up
 const popups = document.querySelectorAll('.pop-up');
-const popupProfile = document.querySelector('.pop-up__edit-profile')
-const popupCard = document.querySelector('.pop-up__add-card')
-const popupPicture = document.querySelector('.pop-up__open-picture')
+const popupProfile = document.querySelector('.pop-up_edit-profile')
+const popupCard = document.querySelector('.pop-up_add-card')
+const popupPicture = document.querySelector('.pop-up_open-picture')
 
 // Переменные для кнопок
 const openButton = document.querySelector('.profile__edit-button');
@@ -59,7 +59,7 @@ const labelPopup = document.querySelector('.pop-up__label-image');
 
 // Переменные для формы
 const formElement = document.querySelector('.form');
-const formCard = document.querySelector('.form__add-card');
+const formCard = document.querySelector('.form_add-card');
 
 // Переменные для автоматической подгрузки карточик используя массив
 const cardsBlock = document.querySelector('.cards-grid');
