@@ -44,9 +44,15 @@
         <div class="pop-up pop-up_edit-profile">
             <div class="pop-up__content">
                 <h3 class="pop-up__content-name">Редактировать профиль</h3>
-                <form class="form form_edit-profile" action="post" name="form-profile">
-                    <input class="form__information form__information_value_name" type="text" name="user-name" placeholder="Имя пользователя">
-                    <input class="form__information form__information_value_profession" type="text" name="user-profession" placeholder="Профессия пользователя">
+                <form class="form form_edit-profile" action="post" name="form-profile" novalidate>
+                    <label class="form__input">
+                        <input class="form__information form__information_value_name" id='name-input' type="text" name="user-name" placeholder="Имя пользователя" minlength="2" maxlength="40" required>
+                        <span class="name-input-error form__input-error"></span> 
+                    </label>
+                    <label class="form__input">
+                        <input class="form__information form__information_value_profession" id='profession-input' type="text" name="user-profession" placeholder="Профессия пользователя" minlength="2" maxlength="400" required>
+                        <span class="profession-input-error form__input-error"></span> 
+                    </label>
                     <button class="form__save form__save_value_edit" type="submit" title="Сохранить" aria-label="Сохранить">Сохранить</button>
                 </form>
                 <button class="pop-up__close pop-up__close-profile" type="button" title="Закрыть pop-up" aria-label="Закрыть"></button>
@@ -57,9 +63,15 @@
         <div class="pop-up pop-up_add-card">
             <div class="pop-up__content">
                 <h3 class="pop-up__content-name">Новое место</h3>
-                <form class="form form_add-card" action="post" name="form-profile">
-                    <input class="form__information form__information_value_label" type="text" name="user-label" placeholder="Название">
-                    <input class="form__information form__information_value_link" type="text" name="user-link" placeholder="Ссылка на картинку">
+                <form class="form form_add-card" action="post" name="form-profile" novalidate>
+                    <label class="form__input">
+                        <input class="form__information form__information_value_label" id='label-input' type="text" name="user-label" placeholder="Название" minlength="2" maxlength="30" required>
+                        <span class="label-input-error form__input-error"></span> 
+                    </label>
+                    <label class="form__input">
+                        <input class="form__information form__information_value_link" id='link-input' type="url" name="user-link" placeholder="Ссылка на картинку" required>
+                        <span class="link-input-error form__input-error"></span> 
+                    </label>
                     <button class="form__save form__save_value_create" type="submit" title="Создать" aria-label="Создать">Создать</button>
                 </form>
                 <button class="pop-up__close pop-up__close-card" type="button" title="Закрыть pop-up" aria-label="Закрыть"></button>
@@ -89,6 +101,7 @@
     </template>
     
     <script src="./scripts/index.js"></script>
-
+    <script src="./scripts/validate.js"></script>
+    
 </body>
 </html>

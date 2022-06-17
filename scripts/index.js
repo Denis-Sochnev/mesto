@@ -65,15 +65,24 @@ const formCard = document.querySelector('.form_add-card');
 const cardsBlock = document.querySelector('.cards-grid');
 const cardForm = document.querySelector('.template-card').content;
 
+//Закрытие по нажатию клавишы
+const pressButtonEsc = evt => {
+  if (evt.key === 'Escape') {
+    const popupOpen = document.querySelector('.pop-up_oppened')
+    closedPopup(popupOpen)
+ }
+}
 
 // Функция открытия pop-up
 function openedPopup(popups) {
   popups.classList.add('pop-up_oppened');
+  document.addEventListener('keydown', pressButtonEsc);
 }
 
 // Функция закрытия pop-up (удаление модификатора)
 function closedPopup(popups) {
   popups.classList.remove('pop-up_oppened');
+  document.removeEventListener('keydown', pressButtonEsc);
 }
 
 // Автоматическое добавление карточек при загрузке страницы
@@ -163,6 +172,18 @@ popups.forEach((popup) => {
       }
   })
 })
+
+//Закрытие по нажатию вне контейнера формы
+popups.forEach((popup) => {
+  popup.addEventListener('mousedown', (evt) => {
+    if (evt.target.classList.contains('pop-up_oppened')) {
+      closedPopup(popup);
+    }
+    if (evt.target.classList.contains('pop-up__close')) {
+      closedPopup(popup);
+    }
+  });
+});
 
 // Отправка заполненой формы на редоктирование профиля
 formElement.addEventListener('submit', submiFormtHandler);

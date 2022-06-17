@@ -49,3 +49,10 @@
 @import url(../blocks/pop-up/__close-image/pop-up__close-image.css);
 @import url(../blocks/pop-up/__image/pop-up__image.css);
 @import url(../blocks/pop-up/__label-image/pop-up__label-image.css);
+
+/* Блок "form" */
+@import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__input-error/form__input-error.css);
+@import url(../blocks/form/__input-error/_active/form__input-error_active.css);
+@import url(../blocks/form/__information/_error/form__information_error.css);
+@import url(../blocks/form/__save/_inactive/form__save_inactive\ .css);
