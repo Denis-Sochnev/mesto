@@ -45,6 +45,7 @@
 @import url(../blocks/form/__information/form__information.css);
 @import url(../blocks/form/__save/form__save.css);
 /* Блок "pop-up" (открытие изображения)*/
+@import url(../blocks/pop-up/_open-picture/pop-up_open-picture.css);
 @import url(../blocks/pop-up/__conatiner-image/pop-up__conatiner-image.css);
 @import url(../blocks/pop-up/__close-image/pop-up__close-image.css);
 @import url(../blocks/pop-up/__image/pop-up__image.css);

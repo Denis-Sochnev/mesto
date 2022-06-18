@@ -1,3 +1,12 @@
+const setings = {
+  formSelector: '.form',
+  inputSelector: '.form__information',
+  submitButtonSelector: '.form__save',
+  inactiveButtonClass: 'form__save_inactive',
+  inputErrorClass: 'form__information_error',
+  errorClass: 'form__input-error_active'
+};
+
 // Массив для формирования карточке на странице
 const initialCards = [
     {
@@ -33,13 +42,9 @@ const popupCard = document.querySelector('.pop-up_add-card')
 const popupPicture = document.querySelector('.pop-up_open-picture')
 
 // Переменные для кнопок
-const openButton = document.querySelector('.profile__edit-button');
-const addButton = document.querySelector('.profile__add-button');
+const buttonEditProfile = document.querySelector('.profile__edit-button');
+const buttonAddCard = document.querySelector('.profile__add-button');
 const buttonCreate = document. querySelector('.form__save_value_create');
-const buttonLike = document.querySelector('.card__like');
-const closeButton = document.querySelector('.pop-up__close');
-const popupCardClose = document. querySelector('.pop-up__close-card');
-const imageClose = document.querySelector('.pop-up__close-image');
 
 // Переменные pop-up для редоктирования имени и профессии
 const profileName = document.querySelector('.profile__name');
@@ -58,8 +63,8 @@ const imagePopup = document.querySelector('.pop-up__image');
 const labelPopup = document.querySelector('.pop-up__label-image');
 
 // Переменные для формы
-const formElement = document.querySelector('.form');
-const formCard = document.querySelector('.form_add-card');
+const formEditProfile = document.querySelector('.form_edit-profile');
+const formAddCard = document.querySelector('.form_add-card');
 
 // Переменные для автоматической подгрузки карточик используя массив
 const cardsBlock = document.querySelector('.cards-grid');
@@ -129,8 +134,8 @@ function deleteCard (evt) {
 // Функция вывода изображения в "pop-up"
 function showingPopupPicture (evt) {
   imagePopup.src = evt.target.src;
-  imagePopup.alt = evt.target.name;
-  labelPopup.textContent = evt.target.name;
+  imagePopup.alt = evt.target.closest('.card').querySelector('.card__name').textContent;
+  labelPopup.textContent = evt.target.closest('.card').querySelector('.card__name').textContent;
   openedPopup(popupPicture);
 }
 
@@ -138,10 +143,10 @@ function showingPopupPicture (evt) {
 function placementCard (evt) {
   evt.preventDefault();
   const fullCardNew = createCard({name: inputLabel.value, link: inputLink.value});
-  loadingCard(fullCardNew);
   cardsBlock.prepend(fullCardNew);
   closedPopup(popupCard);
   evt.target.reset();
+  disableButton(evt.target.querySelector(setings.submitButtonSelector), setings);
 }
 
 // Сохранение внесенной информации в форме
@@ -153,24 +158,15 @@ function submiFormtHandler (evt) {
 }
 
 // Открытие pop-up с информацией в полях ввода
-openButton.addEventListener('click', () => {
+buttonEditProfile.addEventListener('click', () => {
     inputName.value = profileName.textContent;
     inputProffesion.value = profileProffesion.textContent;
     openedPopup(popupProfile);
 })
 
 // Открытие pop-up добавления карточки
-addButton.addEventListener('click', () => {
+buttonAddCard.addEventListener('click', () => {
   openedPopup(popupCard);
-})
-
-// Общее условие для закрытия pop-up
-popups.forEach((popup) => {
-  popup.addEventListener('click', (evt) => {
-     if (evt.target.classList.contains('pop-up__close')) {
-      closedPopup(popup)
-      }
-  })
 })
 
 //Закрытие по нажатию вне контейнера формы
@@ -186,7 +182,7 @@ popups.forEach((popup) => {
 });
 
 // Отправка заполненой формы на редоктирование профиля
-formElement.addEventListener('submit', submiFormtHandler);
+formEditProfile.addEventListener('submit', submiFormtHandler);
 
 // Отправка заполненой формы на создание карточки
-formCard.addEventListener('submit', placementCard);
+formAddCard.addEventListener('submit', placementCard);
